@@ -1,0 +1,52 @@
+1. Variabel dalam Kotlin
+Variabel adalah tempat penyimpanan yang digunakan untuk menyimpan nilai-nilai data. Dalam Kotlin, ada dua jenis variabel utama,
+yaitu var dan val.
+•	var (Variable):
+var digunakan untuk mendeklarasikan variabel yang nilainya dapat diubah (mutable).
+•	val (Value):
+val digunakan untuk mendeklarasikan variabel yang nilainya tidak dapat diubah setelah diinisialisasi (immutable).
+Tipe Data dalam Kotlin
+Tipe Data Numerik:
+•	Int: Bilangan bulat 32-bit.
+•	Double: Bilangan desimal presisi ganda (64-bit).
+Tipe Data Karakter dan String:
+•	Char: Karakter tunggal.
+•	String: Sekumpulan karakter.
+Tipe Data Boolean:
+•	Boolean: Nilai benar atau salah.
+Tipe Data Koleksi:
+•	Array: Koleksi data dengan ukuran tetap.
+•	List: Koleksi data yang tidak bisa diubah (immutable).
+•	MutableList: Koleksi data yang bisa diubah.
+Tipe Data Null:
+•	Untuk mengizinkan null, tambahkan ?.
+
+2. Terdapat 2 jenis percabangan, yaitu if-else dan when
+A. if-else : Berdasarkan ekspresi boolean,Terbatas, Terbatas, biasanya dua (if dan else),Lebih umum, bisa untuk logika kompleks
+B. when : Berdasarkan nilai ekspresi, Bisa banyak, lebih ringkas untuk banyak cabang, Lebih spesifik untuk pemeriksaan nilai
+
+3. Function (fungsi) adalah blok kode yang dirancang untuk   melakukan tugas tertentu.
+Fungsi memungkinkan Anda untuk mengelompokkan kode yang dapat dipanggil berulang kali di berbagai tempat dalam program Anda,
+sehingga kode menjadi lebih modular dan lebih mudah dipelihara.
+
+4. Fungsi generic adalah fungsi yang dapat bekerja dengan berbagai tipe data tanpa perlu menulis ulang fungsi tersebut untuk setiap tipe.
+Ini memungkinkan fungsi lebih fleksibel dan dapat digunakan kembali.
+Karakteristik Fungsi Generic:
+•	Parameter Tipe:
+Fungsi generic menggunakan parameter tipe yang ditulis dalam tanda kurung sudut (<>).
+Misalnya, <T> untuk satu tipe generik atau <K, V> untuk dua tipe generik.
+•	Fleksibilitas:
+Dapat digunakan dengan berbagai tipe data, membuat kode lebih fleksibel dan serbaguna.
+•	Bounded Type Parameters:
+Anda bisa membatasi parameter tipe ke subset tertentu, seperti hanya tipe numerik (<T : Number>).
+
+Perbedaan dengan Fungsi Non-Generic:
+•	Fleksibilitas:
+Generic: Bekerja dengan berbagai tipe data.
+Non-Generic: Terikat pada tipe data tertentu.
+•	Pemeliharaan Kode:
+Generic: Mengurangi duplikasi kode dan mempermudah pemeliharaan.
+Non-Generic: Membutuhkan beberapa fungsi untuk tipe data yang berbeda, meningkatkan kompleksitas kode.
+•	Penggunaan Bounded Type:
+Generic: Bisa membatasi tipe data yang diterima.
+Non-Generic: Tidak memerlukan batasan karena sudah terikat pada tipe spesifik
